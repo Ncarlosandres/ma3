@@ -1,0 +1,189 @@
+﻿body{	
+	background-color: rgb(3, 43, 44);
+
+	color:wheat;
+	}
+.inside{
+            /* Aumentamos la anchura y altura durante 1 segundos */
+            transition: width 0.3s, height 0.3s, transform 0.3s;
+        }
+.zoom {
+            display:inline-block;
+        }
+.zoom:hover > .inside{
+            /* tranformamos el contenido de los elementos .inside al pasar el mouse
+               por encima del elemento .zoom al doble de su tamaño con scale(2). */
+            transform : scale(1.3);
+        }
+
+h3{
+	font-family: Century Gothic;
+    	font-weight: bolder;
+    	font-size:22px;
+    	color: wheat;
+	}
+
+h5{
+	font-weight: bolder;
+	font-size:16px;
+	color: wheat;
+	}
+
+h7{
+	font-weight: bolder;
+	font-size:13px;
+	color: wheat;
+}
+.admin{
+    	background-color: black;
+    	font-size: 30px;
+    	font-weight: bolder;
+    	color: wheat;
+    	font-style: italic;
+    	align-items: center;
+	}
+
+
+hr{
+	background-color: wheat;
+	height: 1px;
+	}
+
+a{
+	font-size: 15px;
+	font-weight: bolder;
+	color: wheat;
+	font-style: italic;
+	}
+
+.admin2{
+	background-color: rgb(44, 1, 0);
+	color: wheat;
+	}
+
+.titulo{
+	font-size: 22px;
+	font-weight: bolder;
+	color: wheat;
+	}
+
+.titulo2{
+	font-size: 16px;
+	color: wheat;
+	}
+
+.titulo3{
+	font-size: 12px;
+	color: wheat;
+	}
+
+.user{
+	background-color: #054f83;
+	font-size: 32px;
+	font-weight: bolder;
+	color: honeydew;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	font-style: italic;
+	}
+
+
+.centrado {margin-top:auto;margin-bottom:auto;text-align:center;padding:10px;}
+.izquierda {text-align:left;}
+.derecha {margin-top:auto;margin-bottom:auto;margin-left:40%;}
+
+.col1{
+	background-color: #01334b;
+	color: wheat;
+	font-size: 22px;
+	}
+
+.col2{
+	background-color: #01334b;
+	color: wheat;
+	font-size: 16px;
+	text-align:center;	
+	}
+
+footer{	
+	background-color: black;
+	color: wheat;
+	align-content:bottom;
+	border: 1px solid wheat;
+	}
+nav{
+	border: 1px solid wheat;
+    	background-color: black;
+    	color: wheat;
+	height: 100px;
+    	font-style: italic;
+	text-align: center;
+	}
+
+nav ul {
+  	display: inline-block;
+	list-style:none;
+	padding:1px;
+}
+nav ul li{
+
+     	}
+
+nav ul li {
+	float: left;
+	margin-top: 10px;
+        color: wheat;
+        font-weight: bold;
+        text-decoration: none;
+        font-size: 20px;
+        padding-left: 50px;
+     }
+
+li i[class^="icon-"] { font-size:12px; }
+li:hover i[class^="icon-"] { font-size:24px;}
+
+label{
+	font-size: 15px;
+	padding-block: 10px;
+
+	color: wheat;
+	font-weight: bolder;
+	text-align:center;
+	}
+
+input[type="submit"]{
+		width:50%;
+		color: wheat;
+		font-weight: bold;
+		padding: 15px;
+		font-size: 14pt;
+		border: 1px solid wheat;
+		cursor: pointer;
+		border-radius: 15px;
+		}
+
+
+th{
+	font-size: 20px;
+	background-color: rgb(44, 1, 0);
+	font-color: wheat;
+	font-weight: bolder;
+	text-align:center;
+	}
+td{
+	background-color: #01334b;
+	color: wheat;
+	}
+
+
+
+
+@import url('https://rsms.me/inter/inter-ui.css');
+html { 
+	font-family: 'Inter UI', sans-serif;
+}
+
+@supports (font-variation-settings: normal) 
+html {
+	font-family: 'Inter UI var alt', sans-serif;
+}

@@ -1,0 +1,117 @@
+h3 {
+    font-weight: bolder;
+    font-size:35px;
+    margin-top: 10px;
+    color: wheat;
+
+}
+.admin
+{
+    background-color: rgb(44, 1, 0);
+    font-size: 32px;
+    font-weight: bolder;
+    color: wheat;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    font-style: italic;
+    text-align:center;
+}
+
+a
+{
+    font-size: 16px;
+    font-weight: bolder;
+    color: wheat;
+    font-style: italic;
+    margin-top:0px;
+    margin-bottom: 0px;
+
+}
+
+.admin2
+{
+    background-color: rgb(44, 1, 0);
+    color: wheat;
+}
+
+.titulo
+{
+    font-size: 22px;
+    font-weight: bolder;
+    color: wheat;
+    margin-top: 6px;
+    margin-bottom: 2px;
+
+}
+
+.titulo2
+{
+    font-size: 16px;
+    color: wheat;
+    margin-top: 2px;
+    margin-bottom: 4px;
+
+}
+.titulo3
+{
+    font-size: 14px;
+    color: wheat;
+
+}
+
+.user
+{
+    background-color: #054f83;
+    font-size: 32px;
+    font-weight: bolder;
+    color: honeydew;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-style: italic;
+
+
+}
+h5 {
+    font-weight: bolder;
+    font-size:18px;
+    color: wheat;
+    text-align: center;
+    margin-top: 10px;
+
+}
+
+
+row {
+    background-color:  blue;
+    color: whitesmoke;
+    font-size: 12px;
+
+}
+
+.centrado {margin-top:auto;margin-bottom:auto;text-align:center;padding:10px;}
+.izquierda {text-align:left;padding:8px;color:rgb(238, 174, 13);}
+.derecha {margin-top:auto;margin-bottom:auto;margin-left:40%;}
+
+.col1 {
+    background-color: #01334b;
+    color: wheat;
+    font-size: 22px;
+	
+}
+
+.col2 {
+    background-color: #01334b;
+    color: wheat;
+    font-size: 16px;
+    text-align:center;	
+}
+
+td {
+    font-size: 13px;
+    text-align: left}
+@import url('https://rsms.me/inter/inter-ui.css');
+
+html {
+    font-family: 'Inter UI', sans-serif;
+}
+

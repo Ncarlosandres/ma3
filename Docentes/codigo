@@ -1,0 +1,50 @@
+<div class="col-lg-7 centrado">
+    <table class="table table-hover col2" style="border-radius: 25px;border: 3px solid black;">
+        <div class="form-group row justify-content-center">
+            <div class="card col2 centrado" style="border-radius: 25px;border: 3px solid black;">
+                <h5>Legajo, DNI o Nombre </h5>
+                <input type="text" name="busqueda" class="autocomplete" onkeyup="showHint(this.value)">
+                <span id="idtabla">
+                        </span>
+            </div>
+        </div>
+        <h3>Registro de Usuarios</h3>
+        <?php
+        include("../Includes/conexion.php");
+        $consulta = "SELECT * FROM usu_pass";
+        $result = mysqli_query($conexion, $consulta);
+
+        ?>
+        <thead class="thead-dark table-striped">
+        <tr class="titulo3">
+            <th>Apellido y Nombre</th>
+            <th>Nom. Usuario</th>
+            <th>Contraseña</th>
+            <th>Dirección</th>
+            <th>Email</th>
+            <th>Privilegios</th>
+            <th colspan="2">ACCIONES</th>
+        </tr>
+        </thead>
+        <?php while($fila=mysqli_fetch_array($result)) {?>
+            <tr>
+                <td align="left"><?php echo $fila['1'];?></td>
+                <td><?php echo $fila['2']; ?></td>
+                <td><?php echo substr ( $fila['3'] ,0,10) ; ?></td>
+                <td><?php echo $fila['4']; ?></td>
+                <td><?php echo $fila['5']; ?></td>
+                <td><?php
+                    if ($fila['6']==TRUE){
+                        echo 'Administrador';
+                    }
+                    else{
+                        echo 'Usuario';
+                    }?></td>
+                <td>
+                    <a class="btn btn-secondary btn-block" href="modifi.php?id=<?php echo $fila['id'];?>"><i class="far fa-edit"></i></a></td>
+                <td>
+                    <a class="btn btn-danger btn-block" href="borrar.php?id=<?php echo $fila['id'];?>"><i class="fas fa-user-times"></i></a></td>
+            </tr>
+        <?php } ?>
+    </table>
+</div>
